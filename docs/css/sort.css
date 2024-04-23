@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: "Inter";
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1f1f1f;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+.card {
+	padding: 1.5rem;
+  background: #2a2a2a;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.wrapper {
+	height: 15rem;
+	width: calc(10px * var(--itemcount));
+	font-size: 0.5em;
+	position: relative;
+}
+.title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+	background-clip: text;
+	color: #b6abff;
+}
+.subtitle {
+	text-align: center;
+	font-weight: 400;
+	color: #b6abff;
+}
+
+.line {
+	position: absolute;
+	bottom: 0;
+	margin: 0 2px;
+	left: calc(var(--position) * 10px);
+	width: 6px;
+	height: calc(var(--value) / var(--itemcount) * 100%);
+	background: var(--color);
+	border-radius: 1em;
+	transition: left 50ms linear;
+	z-index: calc(var(--itemcount) - var(--value) + 50);
+	animation: lineIn 300ms ease;
+}
+@keyframes lineIn {
+	from {
+		height: 0;
+	}
+}
+
+.dot {
+	position: absolute;
+	left: calc(var(--position) * 10px);
+	top: 100%;
+	width: 6px;
+	height: 6px;
+	margin: 4px 2px 0px 2px;
+	background: var(--color);
+	border-radius: 3px;
+	transition: left 0ms linear, width 50ms linear;
+}
+.dot.done {
+	transition: left 150ms ease, width 150ms linear;
+	width: calc(100% - 4px);
+	left: 0;
+	background: linear-gradient(to right, rgb(255,46,96), rgb(164,0,222), rgb(97,0,255))
+}

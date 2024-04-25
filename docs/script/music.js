@@ -12,7 +12,7 @@ const songs = [
     title: "Symphony",
     name: "Clean Bandit ft. Zara Larsson",
     source:
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/Clean-Bandit-Symphony.mp3",
+      "https://www.youtube.com/watch?v=6dMjCa0nqK0",
   },
   {
     title: "Pawn It All",

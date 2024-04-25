@@ -9,7 +9,7 @@ const artistName = document.querySelector(".music-player p");
 
 const songs = [
   {
-    title: "Symphony",
+    title: "toilate",
     name: "Clean Bandit ft. Zara Larsson",
     source:
       "https://www.youtube.com/watch?v=6dMjCa0nqK0",

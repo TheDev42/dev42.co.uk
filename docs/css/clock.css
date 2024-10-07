@@ -112,7 +112,7 @@ body {
     0 0em 12em 60em var(--_o2),
     0 0em 12em 80em var(--_o3);
 }
-.clock.off .shadow {
+.clock.on .shadow {
     box-shadow: 
     0 0 4em 3em #040909,
     0 0 8em 3em var(--_o3),

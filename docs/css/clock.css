@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(var(--_size) * 0.01); /* em hack for shade scaling */
+    font-size: calc(var(--_size) * 0.01);
 
     --_factor: min(600px, 80vh);
     --_size: min(var(--_factor), 80vw);
